@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReceiptTax — Privacy Policy</title>
+<style>
+  :root { --emerald:#10B981; --emerald-dark:#047857; --slate:#0F172A; --ink:#0F172A; --muted:#6b7280; --bg-soft:#ECFDF5; }
+  * { box-sizing: border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); line-height:1.6; margin:0; background:#fff; }
+  .wrap { max-width:720px; margin:0 auto; padding:40px 22px 80px; }
+  header { border-bottom:4px solid var(--emerald); padding-bottom:18px; margin-bottom:28px; }
+  h1 { margin:0 0 4px; font-size:28px; }
+  .sub { color:var(--muted); font-size:15px; }
+  h2 { font-size:19px; margin-top:34px; color:var(--emerald-dark); }
+  p, li { font-size:16px; }
+  a { color:var(--emerald-dark); }
+  .pill { display:inline-block; background:var(--bg-soft); color:var(--emerald-dark); font-weight:600; padding:4px 12px; border-radius:999px; font-size:13px; margin-top:8px; }
+  footer { margin-top:48px; color:var(--muted); font-size:14px; border-top:1px solid #eee; padding-top:18px; }
+  .home { display:inline-block; margin-bottom:20px; color:var(--muted); text-decoration:none; font-size:14px; }
+  .home:hover { color:var(--emerald-dark); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="home" href="./">← All apps</a>
+  <header>
+    <h1>Privacy Policy — ReceiptTax</h1>
+    <div class="sub">Tax-Smart Receipt Scanner for Freelancers</div>
+    <span class="pill">No accounts · No tracking · No ads</span>
+  </header>
+
+  <p><strong>Effective date:</strong> May 26, 2026</p>
+
+  <p>ReceiptTax ("the App") helps freelancers and 1099 contractors scan receipts and auto-categorize expenses for tax purposes. We care about your financial privacy. This policy explains what we handle. <strong>We do not sell your data. We do not run advertising trackers. We do not require an account.</strong></p>
+
+  <h2>1. Photos &amp; Camera</h2>
+  <p>To digitize a receipt, you photograph it or pick an image from your library. The image is sent to our AI provider (see §4) to extract vendor, amount, date, and suggested IRS Schedule C category. <strong>We do not store your receipt images on our servers.</strong></p>
+
+  <h2>2. Receipt &amp; Expense Data</h2>
+  <p>Once a receipt is processed, the structured data (vendor, amount, date, category, notes) is stored <strong>locally on your iPhone</strong> only. This includes:</p>
+  <ul>
+    <li>Receipt thumbnails (stored in your app sandbox)</li>
+    <li>Editable metadata (vendor name, monetary amount, date, IRS Schedule C category)</li>
+    <li>Free-tier counter (3 scans / 24 h, tracked locally)</li>
+  </ul>
+  <p>None of this is uploaded to our servers. Reports you export (CSV / PDF / IRS bundle) are generated on-device and shared via iOS's standard share sheet.</p>
+
+  <h2>3. Financial &amp; Tax Disclaimer</h2>
+  <p>The App's category suggestions are heuristic and based on common Schedule C patterns. <strong>This is not professional tax advice.</strong> Consult a licensed accountant or tax professional before filing.</p>
+
+  <h2>4. Third-Party Services</h2>
+  <ul>
+    <li><strong>Google Gemini AI</strong> (Gemini 2.5 Flash-Lite Vision) — receives the receipt image and returns extracted text/category data. We do not transmit personally identifying information alongside the image. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    <li><strong>Supabase Edge Functions</strong> — relays our API credentials to authorized clients. No user data passes through this layer. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy</a>.</li>
+    <li><strong>Apple StoreKit</strong> — handles optional ReceiptTax Pro subscriptions. We never see payment details. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>5. Subscriptions &amp; Purchases</h2>
+  <p>ReceiptTax Pro is an auto-renewable subscription processed by Apple. Manage or cancel in iOS <strong>Settings → [your name] → Subscriptions</strong>.</p>
+
+  <h2>6. Analytics &amp; Diagnostics</h2>
+  <p>No third-party analytics, no advertising SDKs, no tracking pixels. Crash diagnostics use Apple's standard opt-in mechanism.</p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>ReceiptTax is rated 4+ and intended for adult freelancers. We do not knowingly collect personal information from children under 13.</p>
+
+  <h2>8. Your Rights</h2>
+  <ul>
+    <li>Delete the App to remove all local data (receipts, history, exports).</li>
+    <li>Manage your subscription in iOS Settings → Subscriptions.</li>
+    <li>Contact us (see §10) to ask about data we hold.</li>
+  </ul>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>Significant changes will be noted with a revised effective date.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions? Email <a href="mailto:ahmetbostancikli@gmail.com">ahmetbostancikli@gmail.com</a>.</p>
+
+  <footer>© 2026 ReceiptTax. All rights reserved.</footer>
+</div>
+</body>
+</html>
