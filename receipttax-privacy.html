@@ -35,7 +35,7 @@
   <p>ReceiptTax ("the App") helps freelancers and 1099 contractors scan receipts and auto-categorize expenses for tax purposes. We care about your financial privacy. This policy explains what we handle. <strong>We do not sell your data. We do not run advertising trackers. We do not require an account.</strong></p>
 
   <h2>1. Photos &amp; Camera</h2>
-  <p>To digitize a receipt, you photograph it or pick an image from your library. The image is sent to our AI provider (see §4) to extract vendor, amount, date, and suggested IRS Schedule C category. <strong>We do not store your receipt images on our servers.</strong></p>
+  <p>To digitize a receipt, you photograph it or pick an image from your library. <strong>Before your first scan, the App asks for your explicit permission</strong> to send that image to our third-party AI provider, Google Gemini (see §4). Only the single receipt image you are scanning is sent — it is used to extract vendor, amount, date, and a suggested IRS Schedule C category, and for no other purpose. <strong>We do not store your receipt images on our servers.</strong> If you decline, no image is sent and AI scanning stays off.</p>
 
   <h2>2. Receipt &amp; Expense Data</h2>
   <p>Once a receipt is processed, the structured data (vendor, amount, date, category, notes) is stored <strong>locally on your iPhone</strong> only. This includes:</p>
@@ -51,7 +51,7 @@
 
   <h2>4. Third-Party Services</h2>
   <ul>
-    <li><strong>Google Gemini AI</strong> (Gemini 2.5 Flash-Lite Vision) — receives the receipt image and returns extracted text/category data. We do not transmit personally identifying information alongside the image. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    <li><strong>Google Gemini AI</strong> (Gemini 2.5 Flash-Lite Vision) — with your prior consent, the App sends <strong>only the single receipt image you are scanning</strong> (no name, email, account, or device identifiers alongside it) to Google's Gemini API. The image is used <strong>solely</strong> to read that one receipt and return the extracted vendor, amount, date and category. Under Google's API terms this data is <strong>not used to train Google's models and is not sold</strong>, and Google is contractually required to provide <strong>the same or equivalent protection of your data</strong> as described in this policy. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a>.</li>
     <li><strong>Supabase Edge Functions</strong> — relays our API credentials to authorized clients. No user data passes through this layer. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy</a>.</li>
     <li><strong>Apple StoreKit</strong> — handles optional ReceiptTax Pro subscriptions. We never see payment details. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
   </ul>
